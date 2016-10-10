@@ -1,3 +1,30 @@
 <resources>
     <string name="app_name">Safadog</string>
+
+    <string name="login">Login</string>
+    <string name="senha">Senha</string>
+    <string name="slogan">O que a gente gosta é da cachorrada!</string>
+    <string name="cadastrar">Cadastre-se aqui!</string>
+    <string name="entrar">Entrar</string>
+    <string name="cara_cachorro">Cara do cachorro</string>
+    <string name="sem_conta">Sem conta?</string>
+
+    <string name="error_intro">Por favor </string>
+    <string name="error_blank_email">digite um email valido</string>
+    <string name="error_join">" e "</string>
+    <string name="error_blank_password">digite uma senha</string>
+    <string name="error_end">.</string>
+    <string name="progress_login">Conectando</string>
+    <string name="invalid_login_credentials">Email ou senha incorretos</string>
+    <string name="email_not_verified">Usuario não verificado</string>
+
+    <string name="action_settings">Configurações</string>
+
+    <string name="main">MAIN!</string>
+
+    <string name="facebook_app_id">550246428499668</string>
+    <string name="parse_application_id">YAPaj3f66YeaXgKLRPaom1lB0Jy74y8Q4bmLeNJd</string>
+    <string name="parse_client_key">W7bB2boyp6zv9ZptTc9SDD50iRdxTG2ThfMxYg78</string>
+
+
 </resources>

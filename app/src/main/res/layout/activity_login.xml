@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.empsoft.safadog.LoginActivity">
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:layout_marginBottom="13dp"
+        android:id="@+id/editText_senha"
+        android:imeActionId="@+id/edittext_action_login"
+        android:hint="@string/senha"
+        android:layout_above="@+id/button_entrar"
+        android:layout_centerHorizontal="true"
+        android:imeActionLabel="@string/login"
+        android:imeOptions="actionUnspecified"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:ems="10"
+        android:id="@+id/editText_login"
+        android:hint="@string/login"
+        android:layout_above="@+id/editText_senha"
+        android:layout_alignLeft="@+id/editText_senha"
+        android:layout_alignStart="@+id/editText_senha" />
+
+    <com.facebook.login.widget.LoginButton
+        android:id="@+id/login_facebook_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_above="@+id/editText_login"
+        android:layout_marginBottom="12dp"
+        android:layout_alignRight="@+id/editText_login"
+        android:layout_alignEnd="@+id/editText_login"
+        android:layout_alignLeft="@+id/editText_login"
+        android:layout_alignStart="@+id/editText_login"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView_icone"
+        android:src="@drawable/cara_cachorro"
+        android:layout_below="@+id/textView_marca"
+        android:layout_alignRight="@+id/editText_login"
+        android:layout_alignEnd="@+id/editText_login"
+        android:contentDescription="@string/cara_cachorro" />
+
+    <TextView
+        android:text="@string/app_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="11dp"
+        android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
+        android:id="@+id/textView_marca"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:text="@string/sem_conta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView_conta"
+        android:layout_below="@+id/button_entrar"
+        android:layout_alignLeft="@+id/imageView_icone"
+        android:layout_alignStart="@+id/imageView_icone"
+        android:layout_marginLeft="11dp"
+        android:layout_marginStart="11dp" />
+
+    <TextView
+        android:text="@string/cadastrar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView_cadastrar"
+        android:layout_marginBottom="11dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/editText_senha"
+        android:layout_alignEnd="@+id/editText_senha"
+        android:onClick="onClick"
+        android:clickable="true"/>
+
+    <TextView
+        android:text="@string/slogan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="@android:style/TextAppearance"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/textView_slogan" />
+
+    <Button
+        android:text="@string/entrar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button_entrar"
+        android:layout_marginBottom="13dp"
+        android:layout_above="@+id/textView_cadastrar"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>
