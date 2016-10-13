@@ -1,16 +1,39 @@
 package com.empsoft.safadog;
 
 
-import android.os.Bundle;
 import android.support.v4.app.Fragment;
-import android.view.LayoutInflater;
-import android.view.View;
-import android.view.ViewGroup;
 
-public class PagerAdapter extends Fragment {
+import android.support.v4.app.FragmentManager;
+import android.support.v4.app.FragmentStatePagerAdapter;
+
+public class PagerAdapter extends FragmentStatePagerAdapter {
+    int mNumOfTabs;
+
+    public PagerAdapter(FragmentManager fm, int NumOfTabs) {
+        super(fm);
+        this.mNumOfTabs = NumOfTabs;
+    }
 
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.tab_fragment_3, container, false);
+    public Fragment getItem(int position) {
+
+        switch (position) {
+            case 0:
+                ProfileFragment tab1 = new ProfileFragment();
+                return tab1;
+            case 1:
+                FiltersFragment tab2 = new FiltersFragment();
+                return tab2;
+            case 2:
+                MatchingFragments tab3 = new MatchingFragments();
+                return tab3;
+            default:
+                return null;
+        }
+    }
+
+    @Override
+    public int getCount() {
+        return mNumOfTabs;
     }
 }

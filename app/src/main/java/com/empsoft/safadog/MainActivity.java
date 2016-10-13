@@ -10,6 +10,13 @@ import android.view.MenuItem;
 import com.facebook.appevents.AppEventsLogger;
 import com.parse.ParseObject;
 
+
+import android.support.design.widget.TabLayout;
+import android.support.v4.view.ViewPager;
+import android.support.v7.widget.Toolbar;
+import android.view.Menu;
+import android.view.MenuItem;
+
 /**
  * MainActivity that is performed right after the login
  */
@@ -23,6 +30,8 @@ public class MainActivity extends AppCompatActivity {
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+
 
     }
 
@@ -72,5 +81,7 @@ public class MainActivity extends AppCompatActivity {
     public void onConfigurationChanged(Configuration newConfig) {
         super.onConfigurationChanged(newConfig);
     }
+
+
 
 }

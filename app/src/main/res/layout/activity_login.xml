@@ -51,10 +51,9 @@
         android:layout_height="wrap_content"
         android:id="@+id/imageView_icone"
         android:src="@drawable/cara_cachorro"
+        android:contentDescription="@string/cara_cachorro"
         android:layout_below="@+id/textView_marca"
-        android:layout_alignRight="@+id/editText_login"
-        android:layout_alignEnd="@+id/editText_login"
-        android:contentDescription="@string/cara_cachorro" />
+        android:layout_centerHorizontal="true" />
 
     <TextView
         android:text="@string/app_name"
