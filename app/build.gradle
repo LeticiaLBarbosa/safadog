@@ -43,4 +43,5 @@ dependencies {
         exclude module: 'support-v4'
     }
     compile 'com.android.support:design:23.0.1'
+
 }
