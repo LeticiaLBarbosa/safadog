@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@mipmap/five_stars"
+        android:id="@+id/imageView_fivestars"
+        android:layout_marginBottom="27dp"
+        android:layout_alignBottom="@+id/like_image"
+        android:layout_centerHorizontal="true" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/dislike_image"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/com_facebook_tooltip_blue_xout"
+        android:gravity="center"
+        app:civ_border_width="2dp"
+        app:civ_border_color="@color/colorTextIcons"
+        android:layout_alignTop="@+id/like_image"
+        android:layout_toLeftOf="@+id/textView_feed"
+        android:layout_toStartOf="@+id/textView_feed" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/like_image"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/ic_matches"
+        android:gravity="center"
+        app:civ_border_width="2dp"
+        app:civ_border_color="@color/colorTextIcons"
+        android:layout_marginBottom="81dp"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/textView_feed"
+        android:layout_toEndOf="@+id/textView_feed" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profile_image"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/cara_cachorro"
+        android:gravity="center"
+        app:civ_border_width="2dp"
+        app:civ_border_color="@color/colorTextIcons"
+        android:layout_above="@+id/dislike_image"
+        android:layout_alignLeft="@+id/imageView_fivestars"
+        android:layout_alignStart="@+id/imageView_fivestars"
+        android:layout_marginBottom="61dp" />
+
+    <TextView
+        android:text="Tico"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView_feed"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display3"
+        android:layout_above="@+id/profile_image"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>
