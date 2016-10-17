@@ -2,16 +2,134 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    style="@style/CustomLayoutBackground">
+
+    <ScrollView
+        android:layout_margin="40dp"
+        android:layout_centerVertical="true"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            style="@style/CustomLayout">
+
+            <TextView
+                android:text="@string/seu_perfil"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView_perfil"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:textColor="@color/colorPrimaryDark"/>
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profile_image"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/kxorro4"
+                android:gravity="center"
+                android:layout_below="@+id/textView_perfil"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:id="@+id/textView_caracteristicas"
+                style="@style/CustomListItem"
+                android:text="Macho - 1 ano \n Raça: Labrador"
+                android:padding="7dp"
+                android:layout_toRightOf="@+id/profile_image"
+                android:layout_toEndOf="@+id/profile_image"
+                android:layout_marginLeft="37dp"
+                android:layout_marginStart="37dp"
+                android:layout_marginTop="7dp"
+                android:layout_below="@id/textView_nome"/>
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@mipmap/five_stars"
+                android:id="@+id/imageView_fivestars"
+                android:layout_alignTop="@+id/textView_caracteristicas"
+                android:layout_alignLeft="@+id/profile_image"
+                android:layout_alignStart="@+id/profile_image"
+                android:layout_marginTop="13dp" />
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:id="@+id/imageView_Facebook"
+                android:src="@mipmap/ic_facebook"
+                android:layout_below="@+id/profile_image"
+                android:layout_alignLeft="@+id/textView_nome"
+                android:layout_alignStart="@+id/textView_nome" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:id="@+id/textView_nome"
+                android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                style="@style/CustomListItem"
+                android:text="Tico"
+                android:padding="7dp"
+                android:layout_below="@+id/textView_perfil"
+                android:layout_alignRight="@+id/textView_caracteristicas"
+                android:layout_alignEnd="@+id/textView_caracteristicas"
+                android:layout_marginRight="27dp"
+                android:layout_marginEnd="27dp" />
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:id="@+id/imageView_Instagram"
+                android:src="@mipmap/ic_instagram"
+                android:layout_alignTop="@+id/imageView_Facebook"
+                android:layout_alignRight="@+id/textView_nome"
+                android:layout_alignEnd="@+id/textView_nome" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView_editar"
+                android:text="Editar perfil"
+                style="@style/CustomListItemDark"
+                android:padding="5dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_below="@id/imageView_Facebook"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView_pedigree"
+                android:text="Pedigree"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_alignTop="@+id/textView_editar"
+                android:layout_alignLeft="@+id/imageView_Facebook"
+                android:layout_alignStart="@+id/imageView_Facebook" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView_vacina"
+                android:text="Cartão de vacinação"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_marginTop="5dp"
+                android:layout_alignLeft="@+id/textView_caracteristicas"
+                android:layout_alignStart="@+id/textView_caracteristicas"
+                android:layout_below="@id/textView_pedigree"/>
 
 
-    <TextView
-        android:text="PERFIL"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/textView_main"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="70dp" />
+        </RelativeLayout>
+
+    </ScrollView>
+
 
 </RelativeLayout>
