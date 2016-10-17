@@ -2,9 +2,23 @@
 
     <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
-        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimary">@color/colorPrimaryLight</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="CustomListItem" parent="android:Widget.TextView">
+        <item name="android:background">@drawable/custom_list_item</item>
+        <item name="android:textColor">@color/colorPrimaryDark</item>
+    </style>
+
+    <style name="CustomLayout" parent="android:Widget.TextView">
+        <item name="android:background">@drawable/custom_layout</item>
+        <item name="android:textColor">@color/colorPrimaryDark</item>
+    </style>
+
+    <style name="CustomLayoutBackground" parent="android:Widget.TextView">
+        <item name="android:background">@drawable/fundo</item>
     </style>
 
 </resources>

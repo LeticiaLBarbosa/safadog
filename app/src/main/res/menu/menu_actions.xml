@@ -5,29 +5,29 @@
 
     <item
         android:id="@+id/action_feed"
-        android:orderInCategory="1"
-        android:icon="@drawable/ic_matches"
+        android:orderInCategory="2"
+        android:icon="@drawable/cara_cachorro"
         android:title="Feed"
         app:showAsAction="always"/>
 
     <item
         android:id="@+id/action_match"
-        android:orderInCategory="2"
-        android:icon="@drawable/ic_matches"
+        android:orderInCategory="1"
+        android:icon="@drawable/ic_action_matches"
         android:title="Matches"
         app:showAsAction="always"/>
 
     <item
         android:id="@+id/action_profile"
         android:orderInCategory="3"
-        android:icon="@drawable/ic_matches"
+        android:icon="@drawable/ic_action_profile"
         android:title="Profile"
         app:showAsAction="always"/>
 
     <item
         android:id="@+id/action_filter"
         android:orderInCategory="4"
-        android:icon="@drawable/ic_matches"
+        android:icon="@drawable/ic_action_filter"
         android:title="Filter"
         app:showAsAction="always"/>
 

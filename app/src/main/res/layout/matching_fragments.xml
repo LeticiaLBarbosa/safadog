@@ -1,15 +1,213 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    style="@style/CustomLayoutBackground">
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:text="MATCHING"
-        android:textAppearance="?android:attr/textAppearanceLarge"/>
+    <ScrollView
+        android:layout_margin="40dp"
+        android:layout_centerVertical="true"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            style="@style/CustomLayout">
+
+            <TextView
+                android:text="@string/suas_combinacoes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView_matches"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+                android:textColor="@color/colorPrimaryDark"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:id="@+id/textView1"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                style="@style/CustomListItem"
+                android:layout_alignBottom="@+id/imageView_perfil1"
+                android:layout_alignLeft="@id/imageView_perfil1"
+                android:layout_marginLeft="15dp"
+                android:layout_marginBottom="7dp"
+                android:layout_toLeftOf="@+id/messenger_send_button5"
+                android:layout_toStartOf="@+id/messenger_send_button5"
+                android:text="Tico" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:id="@+id/textView2"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                style="@style/CustomListItem"
+                android:layout_alignBottom="@+id/imageView_perfil2"
+                android:layout_alignLeft="@id/imageView_perfil2"
+                android:layout_marginLeft="15dp"
+                android:layout_marginBottom="7dp"
+                android:layout_toLeftOf="@+id/messenger_send_button5"
+                android:layout_toStartOf="@+id/messenger_send_button5"
+                android:text="Lara" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:id="@+id/textView3"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                style="@style/CustomListItem"
+                android:layout_alignBottom="@+id/imageView_perfil3"
+                android:layout_alignLeft="@id/imageView_perfil3"
+                android:layout_marginLeft="15dp"
+                android:layout_marginBottom="7dp"
+                android:layout_toLeftOf="@+id/messenger_send_button5"
+                android:layout_toStartOf="@+id/messenger_send_button5"
+                android:text="Mel" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:id="@+id/textView4"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                style="@style/CustomListItem"
+                android:layout_alignBottom="@+id/imageView_perfil4"
+                android:layout_alignLeft="@id/imageView_perfil4"
+                android:layout_marginLeft="15dp"
+                android:layout_marginBottom="7dp"
+                android:layout_toLeftOf="@+id/messenger_send_button5"
+                android:layout_toStartOf="@+id/messenger_send_button5"
+                android:text="Flora" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:id="@+id/textView5"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                style="@style/CustomListItem"
+                android:layout_alignBottom="@+id/imageView_perfil5"
+                android:layout_alignLeft="@id/imageView_perfil5"
+                android:layout_marginLeft="15dp"
+                android:layout_marginBottom="7dp"
+                android:layout_toLeftOf="@+id/messenger_send_button5"
+                android:layout_toStartOf="@+id/messenger_send_button5"
+                android:text="Lis" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/imageView_perfil1"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/cara_cachorro"
+                android:gravity="center"
+                app:civ_border_width="2dp"
+                app:civ_border_color="@color/colorTextIcons"
+                android:layout_below="@id/textView_matches"
+                android:layout_margin="15dp"/>
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/kxorro1"
+                android:id="@+id/imageView_perfil2"
+                android:layout_below="@id/imageView_perfil1"
+                android:layout_margin="15dp"
+                android:gravity="center"
+                app:civ_border_width="2dp"
+                app:civ_border_color="@color/colorTextIcons"/>
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/kxorro2"
+                android:id="@+id/imageView_perfil3"
+                android:layout_below="@id/imageView_perfil2"
+                android:layout_margin="15dp"
+                android:gravity="center"
+                app:civ_border_width="2dp"
+                app:civ_border_color="@color/colorTextIcons"/>
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/kxorro3"
+                android:id="@+id/imageView_perfil4"
+                android:layout_below="@id/imageView_perfil3"
+                android:layout_margin="15dp"
+                android:gravity="center"
+                app:civ_border_width="2dp"
+                app:civ_border_color="@color/colorTextIcons"/>
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/kxorro4"
+                android:id="@+id/imageView_perfil5"
+                android:layout_below="@id/imageView_perfil4"
+                android:layout_margin="15dp"
+                android:gravity="center"
+                app:civ_border_width="2dp"
+                app:civ_border_color="@color/colorTextIcons"/>
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@mipmap/ic_chat"
+                android:id="@+id/messenger_send_button1"
+                android:layout_alignBottom="@+id/textView1"
+                android:layout_alignRight="@+id/textView_matches"
+                android:layout_alignEnd="@+id/textView_matches"
+                android:layout_margin="7dp" />
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@mipmap/ic_chat"
+                android:id="@+id/messenger_send_button2"
+                android:layout_alignBottom="@+id/textView2"
+                android:layout_alignRight="@+id/textView_matches"
+                android:layout_alignEnd="@+id/textView_matches"
+                android:layout_margin="7dp" />
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@mipmap/ic_chat"
+                android:id="@+id/messenger_send_button3"
+                android:layout_alignBottom="@+id/textView3"
+                android:layout_alignRight="@+id/textView_matches"
+                android:layout_alignEnd="@+id/textView_matches"
+                android:layout_margin="7dp" />
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@mipmap/ic_chat"
+                android:id="@+id/messenger_send_button4"
+                android:layout_alignBottom="@+id/textView4"
+                android:layout_alignRight="@+id/textView_matches"
+                android:layout_alignEnd="@+id/textView_matches"
+                android:layout_margin="7dp" />
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@mipmap/ic_chat"
+                android:id="@+id/messenger_send_button5"
+                android:layout_alignBottom="@+id/textView5"
+                android:layout_alignRight="@+id/textView_matches"
+                android:layout_alignEnd="@+id/textView_matches"
+                android:layout_margin="7dp"/>
+
+        </RelativeLayout>
+    </ScrollView>
 
 </RelativeLayout>
